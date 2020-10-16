@@ -6,4 +6,5 @@ class ApplicationController < ActionController::Base
     # deviseのuserモデルにパラメーターを許可
     devise_parameter_sanitizer.permit(:sign_up, keys: [:name, :profile, :occupation, :position])
   end
+
 end
